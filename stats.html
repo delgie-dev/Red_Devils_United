@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stats & Records — Red Devils United</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="scrollProgress"></div>
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Red<span>Devils</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ronaldo.html">Ronaldo</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="stats.html" class="active">Stats</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-header-bg"></div>
+    <img class="page-header-bg-img" src="images/old-trafford-inside.jpg"
+      alt="Old Trafford inside" onerror="this.style.display='none'" />
+    <div class="page-header-overlay"></div>
+    <div class="page-header-bg-text">STATS</div>
+    <div class="page-header-content">
+      <p class="section-label">Numbers &amp; Records</p>
+      <h1 class="section-title" style="font-size:clamp(3rem,8vw,6rem);margin-bottom:0.5rem;">Stats &amp; <span>Records</span></h1>
+      <p style="color:var(--gray);font-family:'Barlow Condensed',sans-serif;letter-spacing:3px;font-size:0.9rem;text-transform:uppercase;">CR7 Season Log &nbsp;·&nbsp; Club Records &nbsp;·&nbsp; Famous Matches</p>
+    </div>
+  </div>
+
+  <!-- HEADLINE STATS -->
+  <section class="dark-band" style="padding:3rem 2rem;">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal"><span class="stat-number">145</span><span class="stat-label">CR7 Goals at United</span></div>
+        <div class="stat-card reveal"><span class="stat-number">42</span><span class="stat-label">Goals in 2007–08</span></div>
+        <div class="stat-card reveal"><span class="stat-number">253</span><span class="stat-label">Rooney's Club Record</span></div>
+        <div class="stat-card reveal"><span class="stat-number">758</span><span class="stat-label">Charlton's App Record</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CR7 SEASON TABLE + IMAGE -->
+  <section>
+    <div class="container">
+      <p class="section-label reveal">Season by Season</p>
+      <h2 class="section-title reveal">Ronaldo at <span>Man Utd</span></h2>
+      <div class="divider reveal"></div>
+      <div class="stats-table-split">
+
+        <!-- Left: featured image -->
+        <div class="stats-table-img reveal">
+          <div class="stats-img-main">
+            <img src="images/ronaldo-featured.jpg" alt="Cristiano Ronaldo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="stats-img-fallback" style="background:linear-gradient(135deg,#0a0014,#200030)">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:8rem;color:rgba(218,41,28,0.4);">CR7</span>
+            </div>
+            <div class="stats-img-badge">
+              <span class="stats-badge-num">145</span>
+              <span class="stats-badge-label">Goals</span>
+            </div>
+          </div>
+          <div class="stats-img-row">
+            <div class="stats-img-sm">
+              <img src="images/ronaldo-no7.jpg" alt="No.7"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="stats-img-fallback-sm" style="background:linear-gradient(135deg,#1a0000,#3a0000)"><span>No.7</span></div>
+              <div class="stats-img-sm-label">The Shirt</div>
+            </div>
+            <div class="stats-img-sm">
+              <img src="images/ballon-dor.jpg" alt="Ballon d'Or"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="stats-img-fallback-sm" style="background:linear-gradient(135deg,#1a1200,#3a2800)"><span>🎖️</span></div>
+              <div class="stats-img-sm-label">Ballon d'Or</div>
+            </div>
+            <div class="stats-img-sm">
+              <img src="images/ucl-trophy.jpg" alt="UCL Trophy"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="stats-img-fallback-sm" style="background:linear-gradient(135deg,#001020,#002040)"><span>⭐</span></div>
+              <div class="stats-img-sm-label">UCL Winner</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: table -->
+        <div class="reveal" style="overflow-x:auto;">
+          <table class="data-table">
+            <thead>
+              <tr><th>Season</th><th>Apps</th><th>Goals</th><th>Assists</th><th>Achievement</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2003–04</td><td>40</td>
+                <td class="highlight">6</td><td>3</td>
+                <td><span class="tbl-badge" style="background:rgba(212,175,55,0.15);color:var(--gold);">🏆 FA Cup</span></td>
+              </tr>
+              <tr>
+                <td>2004–05</td><td>50</td>
+                <td class="highlight">9</td><td>7</td>
+                <td><span class="tbl-badge">Finding his feet</span></td>
+              </tr>
+              <tr>
+                <td>2005–06</td><td>46</td>
+                <td class="highlight">12</td><td>9</td>
+                <td><span class="tbl-badge">Growing rapidly</span></td>
+              </tr>
+              <tr>
+                <td>2006–07</td><td>53</td>
+                <td class="highlight">23</td><td>11</td>
+                <td><span class="tbl-badge" style="background:rgba(218,41,28,0.15);color:var(--red);">🏆 PL · PFA POTY</span></td>
+              </tr>
+              <tr class="tbl-row-peak">
+                <td style="color:var(--gold);font-weight:700;">2007–08</td>
+                <td>49</td>
+                <td class="highlight" style="font-size:1.4rem;color:var(--gold);">42</td>
+                <td>8</td>
+                <td><span class="tbl-badge tbl-badge-gold">🏆 PL + UCL · Ballon d'Or</span></td>
+              </tr>
+              <tr>
+                <td>2008–09</td><td>53</td>
+                <td class="highlight">26</td><td>12</td>
+                <td><span class="tbl-badge" style="background:rgba(218,41,28,0.15);color:var(--red);">🏆 PL Title</span></td>
+              </tr>
+              <tr style="background:rgba(212,175,55,0.03);">
+                <td style="color:var(--gold);">2021–22 (Return)</td>
+                <td>39</td><td class="highlight">24</td><td>3</td>
+                <td><span class="tbl-badge">Top scorer · 6th place</span></td>
+              </tr>
+              <tr>
+                <td>2022–23</td><td>16</td>
+                <td class="highlight">3</td><td>2</td>
+                <td><span class="tbl-badge">Left Nov 2022</span></td>
+              </tr>
+              <tr class="tbl-row-total">
+                <td>TOTAL</td>
+                <td style="color:var(--white);font-weight:700;">346</td>
+                <td class="highlight" style="font-size:1.4rem;color:var(--red);">145</td>
+                <td style="color:var(--white);font-weight:700;">64</td>
+                <td><span class="tbl-badge tbl-badge-gold">All Competitions</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOALS BAR CHART -->
+  <section class="dark-band">
+    <div class="container">
+      <p class="section-label reveal">Visual Data</p>
+      <h2 class="section-title reveal">Goals By <span>Season</span></h2>
+      <div class="divider reveal"></div>
+      <div class="svg-chart-wrap">
+        <svg viewBox="0 0 760 290" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;overflow:visible;">
+
+          <!-- grid lines -->
+          <line x1="20" y1="20"  x2="750" y2="20"  stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="20" y1="70"  x2="750" y2="70"  stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="20" y1="120" x2="750" y2="120" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="20" y1="170" x2="750" y2="170" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="20" y1="220" x2="750" y2="220" stroke="rgba(255,255,255,0.10)" stroke-width="2"/>
+
+          <!-- 03-04: goals=6, h=28 -->
+          <rect x="25"  y="192" width="60" height="28"  fill="#DA291C" rx="2" class="schart-bar" style="animation-delay:0.0s"/>
+          <text x="55"  y="236" class="sbar-val">6</text>
+          <text x="55"  y="252" class="sbar-lbl">03–04</text>
+
+          <!-- 04-05: goals=9, h=42 -->
+          <rect x="120" y="178" width="60" height="42"  fill="#DA291C" rx="2" class="schart-bar" style="animation-delay:0.1s"/>
+          <text x="150" y="236" class="sbar-val">9</text>
+          <text x="150" y="252" class="sbar-lbl">04–05</text>
+
+          <!-- 05-06: goals=12, h=58 -->
+          <rect x="215" y="162" width="60" height="58"  fill="#DA291C" rx="2" class="schart-bar" style="animation-delay:0.2s"/>
+          <text x="245" y="236" class="sbar-val">12</text>
+          <text x="245" y="252" class="sbar-lbl">05–06</text>
+
+          <!-- 06-07: goals=23, h=110 -->
+          <rect x="310" y="110" width="60" height="110" fill="#DA291C" rx="2" class="schart-bar" style="animation-delay:0.3s"/>
+          <text x="340" y="236" class="sbar-val">23</text>
+          <text x="340" y="252" class="sbar-lbl">06–07</text>
+
+          <!-- 07-08 PEAK: goals=42, h=200 -->
+          <text x="435" y="10"  style="font-size:20px;text-anchor:middle;dominant-baseline:auto;">👑</text>
+          <rect x="405" y="20"  width="60" height="200" fill="#D4AF37" rx="2" class="schart-bar schart-peak" style="animation-delay:0.4s"/>
+          <text x="435" y="236" class="sbar-val" style="fill:#D4AF37;font-size:15px;">42</text>
+          <text x="435" y="252" class="sbar-lbl" style="fill:#D4AF37;">07–08</text>
+
+          <!-- 08-09: goals=26, h=124 -->
+          <rect x="500" y="96"  width="60" height="124" fill="#DA291C" rx="2" class="schart-bar" style="animation-delay:0.5s"/>
+          <text x="530" y="236" class="sbar-val">26</text>
+          <text x="530" y="252" class="sbar-lbl">08–09</text>
+
+          <!-- 21-22: goals=24, h=114 -->
+          <rect x="595" y="106" width="60" height="114" fill="#ff6b44" rx="2" class="schart-bar" style="animation-delay:0.6s"/>
+          <text x="625" y="236" class="sbar-val">24</text>
+          <text x="625" y="252" class="sbar-lbl">21–22</text>
+
+          <!-- 22-23: goals=3, h=14 -->
+          <rect x="690" y="206" width="60" height="14"  fill="#888888" rx="2" class="schart-bar" style="animation-delay:0.7s"/>
+          <text x="720" y="236" class="sbar-val">3</text>
+          <text x="720" y="252" class="sbar-lbl">22–23</text>
+
+        </svg>
+        <p class="bar-chart-note">Goals per season &nbsp;·&nbsp; Peak: 42 goals (2007–08) &nbsp;·&nbsp; All competitions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAMOUS MATCHES -->
+  <section>
+    <div class="container">
+      <p class="section-label reveal">Memorable Nights</p>
+      <h2 class="section-title reveal">Famous <span>Matches</span></h2>
+      <div class="divider reveal"></div>
+      <div class="match-cards-grid">
+
+        <div class="match-card reveal">
+          <div class="match-card-img">
+            <img src="images/treble-1999.jpg" alt="UCL Final 1999" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="match-card-img-fallback" style="background:linear-gradient(135deg,#1a0000,#8B0000);">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:3rem;">2 — 1</span>
+            </div>
+            <div class="match-card-score-overlay">
+              <span class="match-score">2 — 1</span>
+            </div>
+            <div class="match-card-year">1999</div>
+          </div>
+          <div class="match-card-body">
+            <span class="card-tag">May 26, 1999 · Munich</span>
+            <h3>United 2–1 Bayern Munich</h3>
+            <p>The Treble-completing miracle. 1-0 down in injury time, Sheringham and Solskjaer scored in the final two minutes — the most dramatic UCL final in history.</p>
+            <div class="match-meta">
+              <span class="match-meta-item">🏆 Champions League Final</span>
+              <span class="match-meta-item">⚡ Injury Time Drama</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-card reveal">
+          <div class="match-card-img">
+            <img src="images/moscow-2008.jpg" alt="UCL Final 2008" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="match-card-img-fallback" style="background:linear-gradient(135deg,#001018,#001a28);">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:3rem;">3 — 1</span>
+            </div>
+            <div class="match-card-score-overlay">
+              <span class="match-score" style="color:var(--gold);">3 — 1</span>
+            </div>
+            <div class="match-card-year" style="background:var(--gold);color:var(--black);">2008</div>
+          </div>
+          <div class="match-card-body">
+            <span class="card-tag">May 21, 2008 · Moscow</span>
+            <h3>United 3–1 Chelsea (Pens)</h3>
+            <p>Ronaldo's final. He headed United in front. Won 6-5 on penalties under the Moscow floodlights — CR7's Ballon d'Or season crowned with glory.</p>
+            <div class="match-meta">
+              <span class="match-meta-item">👑 CR7 Scored</span>
+              <span class="match-meta-item">🎯 Won on Pens</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-card reveal">
+          <div class="match-card-img">
+            <img src="images/ronaldo-return-2021.jpg" alt="Ronaldo Return 2021" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="match-card-img-fallback" style="background:linear-gradient(135deg,#001a00,#002a08);">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:3rem;">4 — 2</span>
+            </div>
+            <div class="match-card-score-overlay">
+              <span class="match-score">4 — 2</span>
+            </div>
+            <div class="match-card-year">2021</div>
+          </div>
+          <div class="match-card-body">
+            <span class="card-tag">September 2021 · Old Trafford</span>
+            <h3>United 4–2 Newcastle</h3>
+            <p>Ronaldo scored twice on his home return after 12 years. 74,000 fans erupted. Old Trafford had never been louder — the king was back.</p>
+            <div class="match-meta">
+              <span class="match-meta-item">🔴 CR7 Returns</span>
+              <span class="match-meta-item">⚽ 2 Goals on Debut</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL TIME TOP SCORERS WITH PHOTOS -->
+  <section class="dark-band">
+    <div class="container">
+      <p class="section-label reveal">All-Time Greats</p>
+      <h2 class="section-title reveal">All-Time Top <span>Scorers</span></h2>
+      <div class="divider reveal"></div>
+      <div class="scorer-list">
+
+        <div class="scorer-row reveal">
+          <div class="scorer-rank gold-rank">1</div>
+          <div class="scorer-img">
+            <img src="images/rooney.jpg" alt="Wayne Rooney" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="scorer-img-fallback" style="background:linear-gradient(135deg,#1a0800,#3a1200)"><span>WR</span></div>
+          </div>
+          <div class="scorer-info">
+            <h4 class="scorer-name">Wayne Rooney</h4>
+            <span class="scorer-years">2004–2017</span>
+            <div class="scorer-bar-wrap">
+              <div class="scorer-bar" style="--w:100%;--c:var(--gold)"></div>
+            </div>
+          </div>
+          <div class="scorer-goals">
+            <span class="scorer-goals-num" style="color:var(--gold)">253</span>
+            <span class="scorer-goals-label">Goals</span>
+          </div>
+        </div>
+
+        <div class="scorer-row reveal">
+          <div class="scorer-rank silver-rank">2</div>
+          <div class="scorer-img">
+            <img src="images/bobby-charlton.jpg" alt="Sir Bobby Charlton" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="scorer-img-fallback" style="background:linear-gradient(135deg,#001020,#002040)"><span>BC</span></div>
+          </div>
+          <div class="scorer-info">
+            <h4 class="scorer-name">Sir Bobby Charlton</h4>
+            <span class="scorer-years">1956–1973</span>
+            <div class="scorer-bar-wrap">
+              <div class="scorer-bar" style="--w:98%;--c:#aaaaaa"></div>
+            </div>
+          </div>
+          <div class="scorer-goals">
+            <span class="scorer-goals-num" style="color:#aaa">249</span>
+            <span class="scorer-goals-label">Goals</span>
+          </div>
+        </div>
+
+        <div class="scorer-row reveal">
+          <div class="scorer-rank bronze-rank">3</div>
+          <div class="scorer-img">
+            <img src="images/denis-law.jpg" alt="Denis Law" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="scorer-img-fallback" style="background:linear-gradient(135deg,#100010,#280028)"><span>DL</span></div>
+          </div>
+          <div class="scorer-info">
+            <h4 class="scorer-name">Denis Law</h4>
+            <span class="scorer-years">1962–1973</span>
+            <div class="scorer-bar-wrap">
+              <div class="scorer-bar" style="--w:94%;--c:#cd7f32"></div>
+            </div>
+          </div>
+          <div class="scorer-goals">
+            <span class="scorer-goals-num" style="color:#cd7f32">237</span>
+            <span class="scorer-goals-label">Goals</span>
+          </div>
+        </div>
+
+        <div class="scorer-row reveal">
+          <div class="scorer-rank">4</div>
+          <div class="scorer-img">
+            <img src="images/george-best.jpg" alt="George Best" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="scorer-img-fallback" style="background:linear-gradient(135deg,#1a0000,#3a0000)"><span>GB</span></div>
+          </div>
+          <div class="scorer-info">
+            <h4 class="scorer-name">George Best</h4>
+            <span class="scorer-years">1963–1974</span>
+            <div class="scorer-bar-wrap">
+              <div class="scorer-bar" style="--w:71%;--c:var(--gray)"></div>
+            </div>
+          </div>
+          <div class="scorer-goals">
+            <span class="scorer-goals-num">179</span>
+            <span class="scorer-goals-label">Goals</span>
+          </div>
+        </div>
+
+        <div class="scorer-row reveal">
+          <div class="scorer-rank" style="color:var(--red);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;">CR7</div>
+          <div class="scorer-img">
+            <img src="images/ronaldo.jpg" alt="Cristiano Ronaldo" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="scorer-img-fallback" style="background:linear-gradient(135deg,#0a0014,#200030)"><span>CR7</span></div>
+          </div>
+          <div class="scorer-info">
+            <h4 class="scorer-name" style="color:var(--red)">Cristiano Ronaldo</h4>
+            <span class="scorer-years">2003–09, 2021–22</span>
+            <div class="scorer-bar-wrap">
+              <div class="scorer-bar" style="--w:57%;--c:var(--red)"></div>
+            </div>
+          </div>
+          <div class="scorer-goals">
+            <span class="scorer-goals-num" style="color:var(--red)">145</span>
+            <span class="scorer-goals-label">Goals</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RECORDS THAT STAND -->
+  <section>
+    <div class="container">
+      <p class="section-label reveal">Club Records</p>
+      <h2 class="section-title reveal">Records That <span>Stand</span></h2>
+      <div class="divider reveal"></div>
+      <div class="records-img-grid">
+
+        <div class="record-img-card reveal">
+          <div class="record-img-wrap">
+            <img src="images/bobby-charlton.jpg" alt="Bobby Charlton" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="record-img-fallback" style="background:linear-gradient(135deg,#001020,#002040)">📋</div>
+          </div>
+          <div class="record-img-body">
+            <span class="record-img-value">758</span>
+            <span class="record-img-name">Most Appearances</span>
+            <span class="record-img-who">Sir Bobby Charlton · 1956–1973</span>
+          </div>
+        </div>
+
+        <div class="record-img-card reveal">
+          <div class="record-img-wrap">
+            <img src="images/rooney.jpg" alt="Wayne Rooney" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="record-img-fallback" style="background:linear-gradient(135deg,#1a0800,#3a1200)">⚽</div>
+          </div>
+          <div class="record-img-body">
+            <span class="record-img-value">253</span>
+            <span class="record-img-name">All-Time Top Scorer</span>
+            <span class="record-img-who">Wayne Rooney · 2004–2017</span>
+          </div>
+        </div>
+
+        <div class="record-img-card reveal">
+          <div class="record-img-wrap">
+            <img src="images/ronaldo-featured.jpg" alt="CR7" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="record-img-fallback" style="background:linear-gradient(135deg,#0a0014,#200030)">🔥</div>
+          </div>
+          <div class="record-img-body">
+            <span class="record-img-value">42</span>
+            <span class="record-img-name">Most Goals in a Season</span>
+            <span class="record-img-who">CR7 · 2007–08 · All Competitions</span>
+          </div>
+        </div>
+
+        <div class="record-img-card reveal">
+          <div class="record-img-wrap">
+            <img src="images/ferguson.jpg" alt="Sir Alex Ferguson" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="record-img-fallback" style="background:linear-gradient(135deg,#001830,#003060)">🏆</div>
+          </div>
+          <div class="record-img-body">
+            <span class="record-img-value">13</span>
+            <span class="record-img-name">Most PL Titles (Manager)</span>
+            <span class="record-img-who">Sir Alex Ferguson · 1986–2013</span>
+          </div>
+        </div>
+
+        <div class="record-img-card reveal">
+          <div class="record-img-wrap">
+            <img src="images/giggs.jpg" alt="Ryan Giggs" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="record-img-fallback" style="background:linear-gradient(135deg,#001800,#003000)">🌟</div>
+          </div>
+          <div class="record-img-body">
+            <span class="record-img-value">13×</span>
+            <span class="record-img-name">Most PL Titles (Player)</span>
+            <span class="record-img-who">Ryan Giggs · 1991–2014</span>
+          </div>
+        </div>
+
+        <div class="record-img-card reveal">
+          <div class="record-img-wrap">
+            <img src="images/ronaldo-real-madrid.jpg" alt="CR7 Transfer" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="record-img-fallback" style="background:linear-gradient(135deg,#1a1200,#3a2800)">💛</div>
+          </div>
+          <div class="record-img-body">
+            <span class="record-img-value">£80m</span>
+            <span class="record-img-name">World Record Transfer (2009)</span>
+            <span class="record-img-who">CR7 to Real Madrid · World Record</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG NUMBERS + OLD TRAFFORD IMAGE -->
+  <section class="dark-band">
+    <div class="container">
+      <p class="section-label reveal">By The Numbers</p>
+      <h2 class="section-title reveal">The <span>Big Figures</span></h2>
+      <div class="divider reveal"></div>
+      <div class="big-numbers-split">
+        <div class="stats-grid reveal" style="grid-template-columns:repeat(2,1fr);gap:2px;">
+          <div class="stat-card"><span class="stat-number">74,310</span><span class="stat-label">Old Trafford Capacity</span></div>
+          <div class="stat-card"><span class="stat-number">£80m</span><span class="stat-label">CR7 Sale — World Record</span></div>
+          <div class="stat-card"><span class="stat-number">27</span><span class="stat-label">Years of Ferguson's Reign</span></div>
+          <div class="stat-card"><span class="stat-number">1999</span><span class="stat-label">Year of The Treble</span></div>
+          <div class="stat-card"><span class="stat-number">346</span><span class="stat-label">CR7 Appearances at United</span></div>
+          <div class="stat-card"><span class="stat-number">68</span><span class="stat-label">Total Major Trophies</span></div>
+        </div>
+        <div class="big-numbers-img reveal">
+          <div class="big-img-cell">
+            <img src="images/old-trafford-aerial.jpg" alt="Old Trafford"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="big-img-fallback" style="background:linear-gradient(135deg,#1a0000,#3a0000)">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:5px;color:rgba(218,41,28,0.5);">OLD TRAFFORD</span>
+            </div>
+            <div class="big-img-caption">Old Trafford · 74,310 Capacity · Theatre of Dreams</div>
+          </div>
+          <div class="big-img-row">
+            <div class="big-img-sm">
+              <img src="images/treble-1999.jpg" alt="1999 Treble"
+                onerror="this.style.display='none'" />
+              <div class="big-img-sm-label">Treble 1999</div>
+            </div>
+            <div class="big-img-sm">
+              <img src="images/ferguson.jpg" alt="Ferguson"
+                onerror="this.style.display='none'" />
+              <div class="big-img-sm-label">27 Years</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PAGES NAV STRIP -->
+  <div class="related-strip">
+    <a href="index.html" class="related-cell">
+      <img src="images/old-trafford-exterior.jpg" alt="Home" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay"><span class="related-label">Home</span><span class="related-arrow">→</span></div>
+    </a>
+    <a href="ronaldo.html" class="related-cell">
+      <img src="images/ronaldo.jpg" alt="Ronaldo" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay"><span class="related-label">Ronaldo</span><span class="related-arrow">→</span></div>
+    </a>
+    <a href="history.html" class="related-cell">
+      <img src="images/old-trafford-inside.jpg" alt="History" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay"><span class="related-label">History</span><span class="related-arrow">→</span></div>
+    </a>
+    <a href="stats.html" class="related-cell">
+      <img src="images/ferguson.jpg" alt="Stats" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay"><span class="related-label">Stats</span><span class="related-arrow">→</span></div>
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Red<span>Devils</span></div>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ronaldo.html">Ronaldo</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="stats.html">Stats</a></li>
+    </ul>
+    <p class="footer-copy">© 2024 RedDevils United Fan Site &nbsp;·&nbsp; <span>Manchester United</span> &nbsp;·&nbsp; For fans, by fans</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

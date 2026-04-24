@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red Devils United — Manchester United Fan Site</title>
+  <meta name="description" content="The home of Manchester United fans worldwide. Relive the glory, honour the legends.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="scrollProgress"></div>
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Red<span>Devils</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="ronaldo.html">Ronaldo</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="stats.html">Stats</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-bg-img"
+      src="images/old-trafford-aerial.jpg"
+      alt="Old Trafford"
+      onerror="this.style.display='none'" />
+    <div class="hero-overlay"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-particles" aria-hidden="true">
+      <span class="particle" style="left:8%;width:6px;height:6px;background:var(--red);--dur:12s;--delay:0s;--op:0.35;"></span>
+      <span class="particle" style="left:18%;width:3px;height:3px;background:var(--gold);--dur:9s;--delay:2s;--op:0.3;"></span>
+      <span class="particle" style="left:30%;width:5px;height:5px;background:var(--red);--dur:14s;--delay:1s;--op:0.25;"></span>
+      <span class="particle" style="left:45%;width:4px;height:4px;background:var(--white);--dur:11s;--delay:3.5s;--op:0.15;"></span>
+      <span class="particle" style="left:60%;width:7px;height:7px;background:var(--red);--dur:10s;--delay:0.5s;--op:0.3;"></span>
+      <span class="particle" style="left:72%;width:3px;height:3px;background:var(--gold);--dur:13s;--delay:2.5s;--op:0.35;"></span>
+      <span class="particle" style="left:85%;width:5px;height:5px;background:var(--red);--dur:8s;--delay:4s;--op:0.28;"></span>
+      <span class="particle" style="left:93%;width:4px;height:4px;background:var(--white);--dur:15s;--delay:1.5s;--op:0.2;"></span>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Manchester United Fan Site — Est. 1878</p>
+      <h1>Theatre<br>of <span class="gold">Dreams</span></h1>
+      <p class="hero-sub">The home of Manchester United fans worldwide. Relive the glory, honour the legends, and celebrate the greatest club in football history.</p>
+      <div class="hero-cta">
+        <a href="ronaldo.html" class="btn btn-primary">Explore CR7</a>
+        <a href="history.html" class="btn btn-outline">Club History</a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="scroll-hint-label">Scroll</span>
+      <div class="scroll-hint-line"></div>
+    </div>
+  </section>
+
+  <!-- BREAKING NEWS TICKER -->
+  <div class="news-ticker" aria-label="Club news ticker">
+    <span class="news-ticker-label">⚽ Latest</span>
+    <div class="news-ticker-track">
+      <div class="news-ticker-content">
+        <span class="ticker-item">⚽ CR7 scored 42 goals in the iconic 2007–08 season</span>
+        <span class="ticker-item">🏆 Manchester United — 20 Premier League titles &amp; counting</span>
+        <span class="ticker-item">⭐ 1999 Treble: the most dramatic Champions League final ever</span>
+        <span class="ticker-item">🔴 Old Trafford: largest club stadium in England · 74,310 capacity</span>
+        <span class="ticker-item">👑 Sir Alex Ferguson: 27 years, 38 trophies, the greatest ever</span>
+        <span class="ticker-item">💛 Ronaldo's No. 7 worn by Best, Robson, Cantona, Beckham &amp; CR7</span>
+        <span class="ticker-item">🌍 1968: First English club to win the European Cup under Busby</span>
+        <span class="ticker-item">⚽ CR7 scored 42 goals in the iconic 2007–08 season</span>
+        <span class="ticker-item">🏆 Manchester United — 20 Premier League titles &amp; counting</span>
+        <span class="ticker-item">⭐ 1999 Treble: the most dramatic Champions League final ever</span>
+        <span class="ticker-item">🔴 Old Trafford: largest club stadium in England · 74,310 capacity</span>
+        <span class="ticker-item">👑 Sir Alex Ferguson: 27 years, 38 trophies, the greatest ever</span>
+        <span class="ticker-item">💛 Ronaldo's No. 7 worn by Best, Robson, Cantona, Beckham &amp; CR7</span>
+        <span class="ticker-item">🌍 1968: First English club to win the European Cup under Busby</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="dark-band" style="padding: 3rem 2rem;">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal"><span class="stat-number">20</span><span class="stat-label">Premier League Titles</span></div>
+        <div class="stat-card reveal"><span class="stat-number">3</span><span class="stat-label">Champions League Titles</span></div>
+        <div class="stat-card reveal"><span class="stat-number">145</span><span class="stat-label">CR7 Goals at Man Utd</span></div>
+        <div class="stat-card reveal"><span class="stat-number">1878</span><span class="stat-label">Year Club Founded</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY STRIP -->
+  <div class="gallery-strip">
+    <div class="gallery-item">
+      <img src="images/old-trafford-exterior.jpg" alt="Old Trafford exterior" onerror="this.parentElement.style.background='#1a0000'" />
+      <div class="gallery-caption"><span>Old Trafford</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/old-trafford-inside.jpg" alt="Old Trafford inside" onerror="this.parentElement.style.background='#1a0000'" />
+      <div class="gallery-caption"><span>Theatre of Dreams Inside</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/ronaldo.jpg" alt="Cristiano Ronaldo" onerror="this.parentElement.style.background='#1a0000'" />
+      <div class="gallery-caption"><span>Cristiano Ronaldo</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/mufc-crest.png" alt="Man United Crest" onerror="this.parentElement.style.background='#1a0000'" />
+      <div class="gallery-caption"><span>The Red Devils</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/ferguson.jpg" alt="Sir Alex Ferguson" onerror="this.parentElement.style.background='#1a0000'" />
+      <div class="gallery-caption"><span>Sir Alex Ferguson</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/old-trafford-matchday.jpg" alt="Old Trafford match day" onerror="this.parentElement.style.background='#1a0000'" />
+      <div class="gallery-caption"><span>Match Day</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/old-trafford-pitch.jpg" alt="Old Trafford pitch" onerror="this.parentElement.style.background='#1a0000'" />
+      <div class="gallery-caption"><span>The Pitch</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/ronaldo-no7.jpg" alt="Ronaldo No.7" onerror="this.parentElement.style.background='#1a0000'" />
+      <div class="gallery-caption"><span>No. 7</span></div>
+    </div>
+  </div>
+
+  <!-- FEATURED: RONALDO -->
+  <section>
+    <div class="container">
+      <div class="featured-split">
+        <div style="position: relative;">
+          <p class="section-label reveal">The Legend</p>
+          <h2 class="section-title reveal">Cristiano <span>Ronaldo</span></h2>
+          <div class="divider reveal"></div>
+          <p class="reveal" style="color: var(--light-gray); margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.8;">
+            From a teenage winger who arrived at Old Trafford in 2003 to a five-time Ballon d'Or winner, Cristiano Ronaldo's connection with Manchester United is one of football's greatest love stories.
+          </p>
+          <div style="display: flex; gap: 2.5rem; margin-bottom: 2rem;" class="reveal">
+            <div>
+              <span class="stat-number" style="font-size: 2.5rem;">118</span>
+              <span class="stat-label">Goals (1st Spell)</span>
+            </div>
+            <div>
+              <span class="stat-number" style="font-size: 2.5rem; color: var(--gold);">27</span>
+              <span class="stat-label">Goals (Return)</span>
+            </div>
+          </div>
+          <a href="ronaldo.html" class="btn btn-primary reveal">Full Profile →</a>
+          <span class="featured-number">7</span>
+        </div>
+        <div class="featured-img-wrap reveal">
+          <img class="featured-img-real"
+            src="images/ronaldo-featured.jpg"
+            alt="Cristiano Ronaldo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="featured-img-placeholder" style="display:none;">
+            <span style="font-family:'Bebas Neue',sans-serif;font-size:8rem;color:rgba(218,41,28,0.45);">CR7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="dark-band">
+    <div class="container">
+      <div class="quote-block reveal">
+        <p class="quote-text">"Manchester United is the biggest club in England, and maybe in the world. I'm very proud to be here."</p>
+        <span class="quote-author">— Cristiano Ronaldo, 2003</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE CARDS -->
+  <section>
+    <div class="container">
+      <p class="section-label reveal">Explore the Site</p>
+      <h2 class="section-title reveal">What's <span>Inside</span></h2>
+      <div class="divider reveal"></div>
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img-real"
+              src="images/ronaldo-card.jpg"
+              alt="Cristiano Ronaldo"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Player Profile</span>
+            <h3>Cristiano Ronaldo</h3>
+            <p>Dive deep into CR7's career at Old Trafford. Stats, milestones, goals, and the magic he brought to Manchester.</p>
+            <a href="ronaldo.html" class="card-link">Read More →</a>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img-real"
+              src="images/old-trafford-exterior.jpg"
+              alt="Old Trafford"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Club History</span>
+            <h3>Manchester United's Legacy</h3>
+            <p>From Newton Heath in 1878 to the modern era — explore the rich history of one of football's most iconic clubs.</p>
+            <a href="history.html" class="card-link">Read More →</a>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img-real"
+              src="images/old-trafford-inside.jpg"
+              alt="Old Trafford inside"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Numbers & Records</span>
+            <h3>Stats & Records</h3>
+            <p>Season-by-season stats, club records, and Ronaldo's goalscoring history at United — all the numbers in one place.</p>
+            <a href="stats.html" class="card-link">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNITED LEGENDS -->
+  <section>
+    <div class="container">
+      <p class="section-label reveal">All-Time Greats</p>
+      <h2 class="section-title reveal">United <span>Legends</span></h2>
+      <div class="divider reveal"></div>
+      <div class="legends-grid">
+
+        <div class="legend-card reveal">
+          <div class="legend-img-wrap">
+            <img src="images/ronaldo.jpg" alt="Cristiano Ronaldo" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="legend-img-fallback"><span>CR7</span></div>
+          </div>
+          <div class="legend-info">
+            <span class="legend-number">07</span>
+            <h3>Cristiano Ronaldo</h3>
+            <p class="legend-years">2003–2009 · 2021–2022</p>
+            <p class="legend-stat"><strong>145</strong> Goals</p>
+          </div>
+        </div>
+
+        <div class="legend-card reveal">
+          <div class="legend-img-wrap">
+            <img src="images/ferguson.jpg" alt="Sir Alex Ferguson" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="legend-img-fallback"><span>SAF</span></div>
+          </div>
+          <div class="legend-info">
+            <span class="legend-number">MGR</span>
+            <h3>Sir Alex Ferguson</h3>
+            <p class="legend-years">1986–2013</p>
+            <p class="legend-stat"><strong>38</strong> Trophies</p>
+          </div>
+        </div>
+
+        <div class="legend-card reveal">
+          <div class="legend-img-wrap">
+            <img src="images/cantona.jpg" alt="Eric Cantona" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="legend-img-fallback" style="background:linear-gradient(135deg,#0a0014,#300040)"><span>ERI</span></div>
+          </div>
+          <div class="legend-info">
+            <span class="legend-number">07</span>
+            <h3>Eric Cantona</h3>
+            <p class="legend-years">1992–1997</p>
+            <p class="legend-stat"><strong>82</strong> Goals</p>
+          </div>
+        </div>
+
+        <div class="legend-card reveal">
+          <div class="legend-img-wrap">
+            <img src="images/rooney.jpg" alt="Wayne Rooney" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="legend-img-fallback" style="background:linear-gradient(135deg,#001020,#003060)"><span>WR</span></div>
+          </div>
+          <div class="legend-info">
+            <span class="legend-number">10</span>
+            <h3>Wayne Rooney</h3>
+            <p class="legend-years">2004–2017</p>
+            <p class="legend-stat"><strong>253</strong> Goals</p>
+          </div>
+        </div>
+
+        <div class="legend-card reveal">
+          <div class="legend-img-wrap">
+            <img src="images/giggs.jpg" alt="Ryan Giggs" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="legend-img-fallback" style="background:linear-gradient(135deg,#001800,#003800)"><span>RG</span></div>
+          </div>
+          <div class="legend-info">
+            <span class="legend-number">11</span>
+            <h3>Ryan Giggs</h3>
+            <p class="legend-years">1991–2014</p>
+            <p class="legend-stat"><strong>13×</strong> PL Winner</p>
+          </div>
+        </div>
+
+        <div class="legend-card reveal">
+          <div class="legend-img-wrap">
+            <img src="images/scholes.jpg" alt="Paul Scholes" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="legend-img-fallback" style="background:linear-gradient(135deg,#1a1200,#3a2800)"><span>PS</span></div>
+          </div>
+          <div class="legend-info">
+            <span class="legend-number">18</span>
+            <h3>Paul Scholes</h3>
+            <p class="legend-years">1993–2013</p>
+            <p class="legend-stat"><strong>155</strong> Goals</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OLD TRAFFORD SPLIT -->
+  <section class="dark-band">
+    <div class="container">
+      <div class="featured-split">
+        <div class="featured-img-wrap reveal">
+          <img class="featured-img-real" style="height:420px;"
+            src="images/old-trafford-inside.jpg"
+            alt="Inside Old Trafford"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="featured-img-placeholder" style="display:none; height:420px; flex-direction:column; gap:1rem;">
+            <span style="font-size:5rem;">🏟️</span>
+            <span style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;letter-spacing:5px;color:rgba(218,41,28,0.6);">Old Trafford</span>
+          </div>
+        </div>
+        <div>
+          <p class="section-label reveal">The Home</p>
+          <h2 class="section-title reveal">Old <span>Trafford</span></h2>
+          <div class="divider reveal"></div>
+          <p class="reveal" style="color: var(--light-gray); line-height: 1.8; margin-bottom: 1.5rem;">
+            Old Trafford has been Manchester United's home since 1910. With a capacity of 74,310, it is the largest club football stadium in England and one of the most iconic in the world.
+          </p>
+          <p class="reveal" style="color: var(--light-gray); line-height: 1.8; margin-bottom: 2rem;">
+            Nicknamed the "Theatre of Dreams" by Sir Bobby Charlton, Old Trafford has witnessed some of the most legendary nights in football — European glory, title-winning seasons, and the roar of 74,000 devoted fans.
+          </p>
+          <a href="history.html" class="btn btn-outline reveal">Club History →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GREATEST MOMENTS -->
+  <section class="dark-band">
+    <div class="container">
+      <p class="section-label reveal">Iconic Nights</p>
+      <h2 class="section-title reveal">Greatest <span>Moments</span></h2>
+      <div class="divider reveal"></div>
+      <div class="moments-grid">
+
+        <div class="moment-card reveal">
+          <div class="moment-img">
+            <img src="images/treble-1999.jpg" alt="1999 Treble" loading="lazy" onerror="this.style.display='none'" />
+            <div class="moment-overlay"></div>
+            <div class="moment-year-badge">1999</div>
+          </div>
+          <div class="moment-body">
+            <span class="moment-tag">Champions League Final</span>
+            <h3 class="moment-title">The Treble — Barcelona</h3>
+            <p class="moment-desc">Two injury-time goals against Bayern Munich. The greatest comeback in football history. United won the Premier League, FA Cup and Champions League in one impossible season.</p>
+            <a href="stats.html" class="card-link">See the Stats →</a>
+          </div>
+        </div>
+
+        <div class="moment-card reveal">
+          <div class="moment-img">
+            <img src="images/moscow-2008.jpg" alt="2008 Moscow Final" loading="lazy" onerror="this.style.display='none'" />
+            <div class="moment-overlay"></div>
+            <div class="moment-year-badge">2008</div>
+          </div>
+          <div class="moment-body">
+            <span class="moment-tag">Champions League Final</span>
+            <h3 class="moment-title">Moscow Night — Ronaldo's Finest</h3>
+            <p class="moment-desc">CR7 headed United in front. Penalties under the Moscow floodlights. Van der Sar saved to seal it. Ronaldo lifted the trophy and then lifted the Ballon d'Or.</p>
+            <a href="ronaldo.html" class="card-link">CR7 Story →</a>
+          </div>
+        </div>
+
+        <div class="moment-card reveal">
+          <div class="moment-img">
+            <img src="images/ronaldo-return-2021.jpg" alt="Ronaldo Return 2021" loading="lazy" onerror="this.style.display='none'" />
+            <div class="moment-overlay"></div>
+            <div class="moment-year-badge">2021</div>
+          </div>
+          <div class="moment-body">
+            <span class="moment-tag">Premier League</span>
+            <h3 class="moment-title">The King Returns</h3>
+            <p class="moment-desc">Old Trafford held its breath as No. 7 walked back through the tunnel after 12 years. He scored twice. 74,000 fans erupted. CR7 was home.</p>
+            <a href="ronaldo.html" class="card-link">Read More →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ANTHEM SECTION -->
+  <section class="anthem-section" id="anthem">
+    <div class="anthem-header reveal">
+      <p class="section-label">The Club Anthem</p>
+      <h2 class="section-title">Glory Glory <span>Man United</span></h2>
+      <div class="divider"></div>
+      <p style="color: var(--light-gray); max-width: 600px;">
+        Press play on the video — then watch the lyrics light up in time with the song. Turn up the volume and sing along.
+      </p>
+    </div>
+
+    <div class="anthem-inner">
+      <div>
+        <div class="anthem-video-wrap">
+          <iframe
+            id="ytAnthem"
+            src="https://www.youtube.com/embed/UyEct2ocXOQ?enablejsapi=1"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="Glory Glory Man United">
+          </iframe>
+        </div>
+        <p class="anthem-note">▶ Press play above.</p>
+        <div class="lyrics-progress" style="margin-top: 1.5rem;" id="anthemProgress">
+          <span class="lyric-time" id="anthemTime">0:00</span>
+          <div class="lyric-bar" id="anthemBar">
+            <div class="lyric-bar-fill" id="anthemFill"></div>
+          </div>
+          <span class="lyric-time" id="anthemDuration">—</span>
+        </div>
+      </div>
+
+      <div>
+        <span class="lyrics-header">🎵 Lyrics</span>
+        <div class="lyrics-box" id="lyricsBox">
+
+          <span class="lyric-section-tag">Chorus</span>
+          <div class="lyric-line" data-time="16">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="19">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="22">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="26">As the Reds go marching on, on, on!</div>
+
+          <span class="lyric-section-tag">Verse 1</span>
+          <div class="lyric-line" data-time="32">Welcome to Old Trafford</div>
+          <div class="lyric-line" data-time="35">It's the theatre of our dreams</div>
+          <div class="lyric-line" data-time="38">We're ready to die, we're ready to fight</div>
+          <div class="lyric-line" data-time="42">It's part of our history</div>
+          <div class="lyric-line" data-time="46">The power and the glory</div>
+          <div class="lyric-line" data-time="50">Oh the Stretford End will sing</div>
+          <div class="lyric-line" data-time="54">As the Reds go marching on, on, on!</div>
+
+          <span class="lyric-section-tag">Chorus</span>
+          <div class="lyric-line" data-time="59">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="62">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="65">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="69">As the Reds go marching on, on, on!</div>
+
+          <span class="lyric-section-tag">Verse 2</span>
+          <div class="lyric-line" data-time="74">With Rashford and Lukaku and the magic at their feet</div>
+          <div class="lyric-line" data-time="78">There's no competition in the English Premier League</div>
+          <div class="lyric-line" data-time="81">We won the champions of the world</div>
+          <div class="lyric-line" data-time="84">Cause we're the greatest football team</div>
+          <div class="lyric-line" data-time="87">As the Reds go marching on, on, on!</div>
+
+          <span class="lyric-section-tag">Chorus</span>
+          <div class="lyric-line" data-time="91">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="95">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="97">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="101">As the Reds go marching on, on, on!</div>
+
+          <span class="lyric-section-tag">Verse 3</span>
+          <div class="lyric-line" data-time="104">And now we are the champions</div>
+          <div class="lyric-line" data-time="107">And there's no one left to beat</div>
+          <div class="lyric-line" data-time="109">We finished off the Scousers</div>
+          <div class="lyric-line" data-time="114">And silenced the Mersey beat</div>
+          <div class="lyric-line" data-time="117">And in Europe you'll see our glory</div>
+          <div class="lyric-line" data-time="121">68 — Kidd, Charlton and Best</div>
+          <div class="lyric-line" data-time="125">As the Reds go marching on, on, on!</div>
+
+          <span class="lyric-section-tag">Chorus</span>
+          <div class="lyric-line" data-time="130">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="133">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="137">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="140">As the Reds go marching on, on, on!</div>
+
+          <span class="lyric-section-tag">Final Chorus</span>
+          <div class="lyric-line" data-time="143">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="146">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="150">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="153">As the Reds go marching on, on, on!</div>
+
+          <span class="lyric-section-tag">Outro</span>
+          <div class="lyric-line" data-time="156">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="158">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="161">Glory, glory Man United</div>
+          <div class="lyric-line" data-time="164">As the Reds go marching on.....</div>
+
+          <div style="height: 1.5rem;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RED BAND CTA -->
+  <section class="red-band">
+    <div class="container">
+      <p style="font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:1rem;" class="reveal">Manchester United</p>
+      <h2 class="section-title reveal" style="font-size:clamp(3rem,8vw,6rem);">Glory Glory <span style="color:var(--gold);">Man United</span></h2>
+      <p class="reveal" style="color:rgba(255,255,255,0.8);margin-bottom:2.5rem;font-size:1.1rem;max-width:500px;margin-left:auto;margin-right:auto;">The greatest club. The greatest fans. Forever Red.</p>
+      <a href="history.html" class="btn btn-outline reveal">Explore the History</a>
+    </div>
+  </section>
+
+  <!-- RELATED PAGES NAV STRIP -->
+  <div class="related-strip">
+    <a href="index.html" class="related-cell">
+      <img src="images/old-trafford-exterior.jpg" alt="Home" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay">
+        <span class="related-label">Home</span>
+        <span class="related-arrow">→</span>
+      </div>
+    </a>
+    <a href="ronaldo.html" class="related-cell">
+      <img src="images/ronaldo.jpg" alt="Ronaldo" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay">
+        <span class="related-label">Ronaldo</span>
+        <span class="related-arrow">→</span>
+      </div>
+    </a>
+    <a href="history.html" class="related-cell">
+      <img src="images/old-trafford-inside.jpg" alt="History" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay">
+        <span class="related-label">History</span>
+        <span class="related-arrow">→</span>
+      </div>
+    </a>
+    <a href="stats.html" class="related-cell">
+      <img src="images/ferguson.jpg" alt="Stats" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay">
+        <span class="related-label">Stats</span>
+        <span class="related-arrow">→</span>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Red<span>Devils</span></div>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ronaldo.html">Ronaldo</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="stats.html">Stats</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 RedDevils United Fan Site &nbsp;·&nbsp; <span>Manchester United</span> &nbsp;·&nbsp; For fans, by fans</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

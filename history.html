@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manchester United History — Red Devils United</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="scrollProgress"></div>
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Red<span>Devils</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ronaldo.html">Ronaldo</a></li>
+      <li><a href="history.html" class="active">History</a></li>
+      <li><a href="stats.html">Stats</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-header-bg"></div>
+    <img class="page-header-bg-img" src="images/old-trafford-aerial.jpg"
+      alt="Old Trafford" onerror="this.style.display='none'" />
+    <div class="page-header-overlay"></div>
+    <div class="page-header-bg-text">HISTORY</div>
+    <div class="page-header-content">
+      <p class="section-label">Est. 1878</p>
+      <h1 class="section-title" style="font-size:clamp(3rem,8vw,6rem);margin-bottom:0.5rem;">Manchester <span>United</span></h1>
+      <p style="color:var(--gray);font-family:'Barlow Condensed',sans-serif;letter-spacing:3px;font-size:0.9rem;text-transform:uppercase;">Newton Heath → Manchester United → Global Football Icon</p>
+    </div>
+  </div>
+
+  <!-- STAT STRIP -->
+  <section class="dark-band" style="padding:3rem 2rem;">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal"><span class="stat-number">20</span><span class="stat-label">League Titles</span></div>
+        <div class="stat-card reveal"><span class="stat-number">3</span><span class="stat-label">Champions League</span></div>
+        <div class="stat-card reveal"><span class="stat-number">12</span><span class="stat-label">FA Cup Titles</span></div>
+        <div class="stat-card reveal"><span class="stat-number">68</span><span class="stat-label">Major Trophies</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORIGIN -->
+  <section>
+    <div class="container">
+      <p class="section-label reveal">Origins</p>
+      <h2 class="section-title reveal">From Newton Heath <span>to Glory</span></h2>
+      <div class="divider reveal"></div>
+      <div class="featured-split">
+        <div>
+          <p class="reveal" style="color:var(--light-gray);line-height:1.9;margin-bottom:1.5rem;">Manchester United was founded in 1878 as Newton Heath LYR Football Club by workers of the Lancashire and Yorkshire Railway. The club played in black and gold before eventually adopting the now-famous red shirts.</p>
+          <p class="reveal" style="color:var(--light-gray);line-height:1.9;margin-bottom:1.5rem;">After financial difficulty brought the club to the brink of collapse, local businessman John Henry Davies rescued them in 1902, renaming the club Manchester United.</p>
+          <p class="reveal" style="color:var(--light-gray);line-height:1.9;margin-bottom:2rem;">The club moved to Old Trafford in 1910, a ground that would become known as the "Theatre of Dreams." With a current capacity of 74,310, Old Trafford is the largest club stadium in England.</p>
+          <a href="stats.html" class="btn btn-primary reveal">View Club Records →</a>
+        </div>
+        <div class="featured-img-wrap reveal">
+          <img class="featured-img-real" style="height:420px;"
+            src="images/old-trafford-exterior.jpg" alt="Old Trafford"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="featured-img-placeholder" style="display:none;height:420px;flex-direction:column;gap:1.5rem;">
+            <span style="font-size:5rem;">🏟️</span>
+            <span style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;letter-spacing:5px;color:rgba(218,41,28,0.6);">Old Trafford</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDING IMAGE STRIP -->
+  <div class="hist-img-strip">
+
+    <div class="hist-img-cell">
+      <div class="hist-img-fallback" style="background:linear-gradient(135deg,#2a1400,#4a2000)">
+        <span class="hist-img-fallback-year">1878</span>
+        <span class="hist-img-fallback-label">Newton Heath Founded</span>
+      </div>
+      <img src="images/newton-heath.jpg" alt="Newton Heath" loading="lazy"
+        class="hist-img-over"
+        onerror="this.style.display='none'" />
+      <div class="hist-img-overlay"><span>1878 — Newton Heath</span></div>
+    </div>
+
+    <div class="hist-img-cell">
+      <div class="hist-img-fallback" style="background:linear-gradient(135deg,#1a0000,#3a0000)">
+        <span class="hist-img-fallback-year">1910</span>
+        <span class="hist-img-fallback-label">Old Trafford Opens</span>
+      </div>
+      <img src="images/old-trafford-1910.jpg" alt="Old Trafford 1910" loading="lazy"
+        class="hist-img-over"
+        onerror="this.style.display='none'" />
+      <div class="hist-img-overlay"><span>1910 — Old Trafford Opens</span></div>
+    </div>
+
+    <div class="hist-img-cell">
+      <div class="hist-img-fallback" style="background:linear-gradient(135deg,#001020,#002850)">
+        <span class="hist-img-fallback-year">TODAY</span>
+        <span class="hist-img-fallback-label">74,310 Capacity</span>
+      </div>
+      <img src="images/old-trafford-exterior.jpg" alt="Old Trafford today" loading="lazy"
+        class="hist-img-over"
+        onerror="this.style.display='none'" />
+      <div class="hist-img-overlay"><span>Today — Theatre of Dreams</span></div>
+    </div>
+
+    <div class="hist-img-cell">
+      <div class="hist-img-fallback" style="background:linear-gradient(135deg,#200000,#500000)">
+        <span style="font-size:3.5rem;line-height:1;">🔴</span>
+        <span class="hist-img-fallback-year" style="font-size:1.8rem;">MUFC</span>
+        <span class="hist-img-fallback-label">The Red Devils</span>
+      </div>
+      <img src="images/mufc-crest.png" alt="Man United Crest" loading="lazy"
+        class="hist-img-over" style="object-fit:contain;padding:1.5rem;"
+        onerror="this.style.display='none'" />
+      <div class="hist-img-overlay"><span>The Red Devils</span></div>
+    </div>
+
+  </div>
+
+  <!-- MUNICH AIR DISASTER -->
+  <section style="background:linear-gradient(135deg,#080808 0%,#0e0000 50%,#080808 100%);padding:5rem 2rem;border-top:1px solid rgba(218,41,28,0.15);border-bottom:1px solid rgba(218,41,28,0.15);">
+    <div class="container">
+      <div class="munich-memorial">
+        <div class="munich-text reveal">
+          <p class="section-label" style="color:var(--gold)">6 February 1958</p>
+          <h2 class="section-title" style="font-size:clamp(2.2rem,5vw,4rem);">Munich Air <span style="color:var(--gold)">Disaster</span></h2>
+          <div class="divider" style="background:linear-gradient(90deg,var(--gold),var(--red));"></div>
+          <p style="color:var(--light-gray);line-height:1.9;margin-bottom:1.5rem;">
+            On 6 February 1958, British European Airways Flight 609 crashed on its third attempt to take off from a slush-covered runway at Munich-Riem Airport. The plane was carrying the Manchester United squad — the "Busby Babes" — home from a European Cup match in Belgrade.
+          </p>
+          <p style="color:var(--light-gray);line-height:1.9;margin-bottom:1.5rem;">
+            Twenty-three of the 44 people on board died. Eight were Manchester United players. Matt Busby himself was critically injured, receiving last rites twice. Yet he survived, rebuilt the club from the rubble, and led a new generation of United players to the European Cup in 1968 — dedicating the trophy to those lost in Munich.
+          </p>
+          <div class="munich-victims">
+            <span class="victim-name">Roger Byrne</span>
+            <span class="victim-name">Geoff Bent</span>
+            <span class="victim-name">Eddie Colman</span>
+            <span class="victim-name">Mark Jones</span>
+            <span class="victim-name">David Pegg</span>
+            <span class="victim-name">Tommy Taylor</span>
+            <span class="victim-name">Liam Whelan</span>
+            <span class="victim-name">Duncan Edwards</span>
+          </div>
+          <p style="color:var(--gray);font-size:0.8rem;margin-top:1.5rem;font-style:italic;font-family:'Barlow Condensed',sans-serif;letter-spacing:2px;">IN MEMORIAM · FOREVER RED</p>
+        </div>
+        <div class="munich-right reveal">
+          <div class="munich-plaque">
+            <div class="munich-plaque-icon">✈</div>
+            <p class="munich-plaque-date">6 · II · 1958</p>
+            <p class="munich-plaque-title">MUNICH</p>
+            <p class="munich-plaque-sub">Eight players gave their lives<br>so this club could live forever</p>
+            <div class="munich-plaque-line"></div>
+            <p class="munich-plaque-quote">"The flowers of Manchester"</p>
+          </div>
+          <div class="munich-img-wrap" style="margin-top:1.5rem;position:relative;overflow:hidden;">
+            <img src="images/munich-memorial.jpg" alt="Munich Memorial"
+              loading="lazy"
+              style="width:100%;height:200px;object-fit:cover;object-position:center top;border:1px solid rgba(212,175,55,0.2);"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+            <div style="display:none;width:100%;height:200px;background:linear-gradient(135deg,#0e0000,#1a0000);border:1px solid rgba(212,175,55,0.2);display:flex;align-items:center;justify-content:center;">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:6px;color:rgba(212,175,55,0.4);">FOREVER IN OUR HEARTS</span>
+            </div>
+            <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,8,0.9),transparent);display:flex;align-items:flex-end;padding:1rem;pointer-events:none;">
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);opacity:0.8;">Old Trafford — Forever United</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="dark-band">
+    <div class="container">
+      <p class="section-label reveal">Key Eras</p>
+      <h2 class="section-title reveal">Great <span>Chapters</span></h2>
+      <div class="divider reveal"></div>
+      <div class="timeline reveal">
+
+        <div class="timeline-item timeline-item-img">
+          <span class="timeline-year">1878</span>
+          <h3 class="timeline-title">Newton Heath Founded</h3>
+          <p class="timeline-desc">The club was born as Newton Heath LYR Football Club by Lancashire and Yorkshire Railway workers in Manchester.</p>
+          <div class="timeline-img">
+            <img src="images/newton-heath.jpg" alt="Newton Heath 1878" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="timeline-img-fallback" style="background:linear-gradient(135deg,#0e0800,#2a1800)"><span>1878</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-img">
+          <span class="timeline-year">1902</span>
+          <h3 class="timeline-title">Renamed Manchester United</h3>
+          <p class="timeline-desc">After near bankruptcy, John Henry Davies saved the club and renamed it Manchester United.</p>
+          <div class="timeline-img">
+            <img src="images/mufc-1902.jpg" alt="Manchester United 1902" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="timeline-img-fallback" style="background:linear-gradient(135deg,#1a0000,#3a0000)"><span>1902</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-img">
+          <span class="timeline-year">1945–1969</span>
+          <h3 class="timeline-title">The Busby Era — The Babes & European Glory</h3>
+          <p class="timeline-desc">Sir Matt Busby transformed United into a footballing force. The Busby Babes were devastated by the Munich Air Disaster in 1958, but Busby rebuilt and led United to become the first English club to win the European Cup in 1968, with George Best, Bobby Charlton, and Denis Law.</p>
+          <div class="timeline-img">
+            <img src="images/busby-era.jpg" alt="The Busby Era" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="timeline-img-fallback" style="background:linear-gradient(135deg,#100010,#280028)"><span>Busby Era</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-img">
+          <span class="timeline-year">1986–2013</span>
+          <h3 class="timeline-title">The Ferguson Dynasty</h3>
+          <p class="timeline-desc">Sir Alex Ferguson's 27-year reign is the greatest managerial tenure in football history. 13 Premier League titles, 5 FA Cups, 2 Champions Leagues. Ferguson turned United into the dominant force of English football.</p>
+          <div class="timeline-img">
+            <img src="images/ferguson.jpg" alt="Sir Alex Ferguson" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="timeline-img-fallback" style="background:linear-gradient(135deg,#001020,#002040)"><span>Sir Alex</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-img">
+          <span class="timeline-year">1999</span>
+          <h3 class="timeline-title">The Treble — The Greatest Season</h3>
+          <p class="timeline-desc">United won the Premier League, FA Cup, and Champions League — completing an unprecedented Treble. Two injury-time goals by Sheringham and Solskjaer against Bayern Munich in the most dramatic finale in football history.</p>
+          <div class="timeline-img">
+            <img src="images/treble-1999.jpg" alt="The 1999 Treble" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="timeline-img-fallback" style="background:linear-gradient(135deg,#1a0800,#3a1200)"><span>The Treble</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-img">
+          <span class="timeline-year">2008</span>
+          <h3 class="timeline-title">Champions League Glory with Ronaldo</h3>
+          <p class="timeline-desc">Ronaldo's 42-goal season powered United to the Premier League and a penalty win over Chelsea in Moscow. Ronaldo won the Ballon d'Or.</p>
+          <div class="timeline-img">
+            <img src="images/moscow-2008.jpg" alt="2008 Champions League" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="timeline-img-fallback" style="background:linear-gradient(135deg,#001830,#003060)"><span>Moscow 2008</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ERA IMAGE STRIP -->
+  <section style="padding:0;">
+    <div class="era-strip">
+      <div class="era-cell">
+        <img src="images/busby-era.jpg" alt="The Busby Era" loading="lazy"
+          onerror="this.style.display='none'" />
+        <div class="era-fallback" style="background:linear-gradient(135deg,#100010,#280028)"></div>
+        <div class="era-overlay">
+          <span class="era-year">1945–1969</span>
+          <span class="era-name">The Busby Era</span>
+        </div>
+      </div>
+      <div class="era-cell">
+        <img src="images/old-trafford-inside.jpg" alt="Rebuilding Years" loading="lazy"
+          onerror="this.style.display='none'" />
+        <div class="era-fallback" style="background:linear-gradient(135deg,#001020,#002040)"></div>
+        <div class="era-overlay">
+          <span class="era-year">1970–1985</span>
+          <span class="era-name">Rebuilding Years</span>
+        </div>
+      </div>
+      <div class="era-cell">
+        <img src="images/ferguson.jpg" alt="The Ferguson Era" loading="lazy"
+          onerror="this.style.display='none'" />
+        <div class="era-fallback" style="background:linear-gradient(135deg,#001830,#003060)"></div>
+        <div class="era-overlay">
+          <span class="era-year">1986–2013</span>
+          <span class="era-name">The Ferguson Dynasty</span>
+        </div>
+      </div>
+      <div class="era-cell">
+        <img src="images/ronaldo.jpg" alt="Ronaldo Era" loading="lazy"
+          onerror="this.style.display='none'" />
+        <div class="era-fallback" style="background:linear-gradient(135deg,#0a0014,#1a0028)"></div>
+        <div class="era-overlay">
+          <span class="era-year">2003–2009</span>
+          <span class="era-name">The Ronaldo Years</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGENDS CARDS -->
+  <section>
+    <div class="container">
+      <p class="section-label reveal">Club Legends</p>
+      <h2 class="section-title reveal">The <span>Icons</span></h2>
+      <div class="divider reveal"></div>
+      <div class="cards-grid">
+
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img-real" src="images/ferguson.jpg"
+              alt="Sir Alex Ferguson" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="card-img-placeholder" style="background:linear-gradient(135deg,#001830,#003060);">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:3px;color:var(--gold)">SAF</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Manager · 1986–2013</span>
+            <h3>Sir Alex Ferguson</h3>
+            <p>The greatest manager in football history. 13 Premier League titles, 2 Champions Leagues, 5 FA Cups. Simply irreplaceable.</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img-real" src="images/busby.jpg"
+              alt="Sir Matt Busby" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="card-img-placeholder" style="background:linear-gradient(135deg,#0a001a,#3a002a);">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:3px;color:var(--gold)">SMB</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Manager · 1945–1969</span>
+            <h3>Sir Matt Busby</h3>
+            <p>The father of modern Manchester United. Built three great teams, survived Munich, and led United to the European Cup in 1968.</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img-real" src="images/ronaldo.jpg"
+              alt="Cristiano Ronaldo" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="card-img-placeholder" style="background:linear-gradient(135deg,#0a0014,#1a0028);">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:3px;color:var(--red)">CR7</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Player · 2003–2009, 2021–2022</span>
+            <h3>Cristiano Ronaldo</h3>
+            <p>Joined as a teenage winger and left as the world's best player. His 42-goal 2007–08 season powered United to the Champions League.</p>
+            <a href="ronaldo.html" class="card-link">Full Profile →</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img-real" src="images/george-best.jpg"
+              alt="George Best" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="card-img-placeholder" style="background:linear-gradient(135deg,#1a0000,#3a0000);">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:3px;color:var(--red)">GB7</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Player · 1963–1974</span>
+            <h3>George Best</h3>
+            <p>The original No.7. Ballon d'Or winner in 1968, European Cup winner alongside Busby. Many consider him the greatest talent ever to play for United.</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img-real" src="images/bobby-charlton.jpg"
+              alt="Sir Bobby Charlton" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="card-img-placeholder" style="background:linear-gradient(135deg,#001020,#002040);">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:3px;color:var(--gold)">SBC</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Player · 1956–1973</span>
+            <h3>Sir Bobby Charlton</h3>
+            <p>Munich survivor and club legend. 249 United goals, World Cup winner, European Cup winner. The most decorated English footballer of his generation.</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-img-wrap">
+            <img class="card-img-real" src="images/rooney.jpg"
+              alt="Wayne Rooney" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="card-img-placeholder" style="background:linear-gradient(135deg,#1a0800,#3a1200);">
+              <span style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:3px;color:var(--red)">WR10</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Player · 2004–2017</span>
+            <h3>Wayne Rooney</h3>
+            <p>United's all-time top scorer with 253 goals. Won 5 Premier League titles, a Champions League, and an FA Cup during his legendary spell at Old Trafford.</p>
+            <a href="stats.html" class="card-link">View Records →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TROPHY CABINET -->
+  <section class="dark-band">
+    <div class="container">
+      <p class="section-label reveal">Honours Board</p>
+      <h2 class="section-title reveal">Trophy <span>Cabinet</span></h2>
+      <div class="divider reveal"></div>
+      <div class="hist-trophy-grid">
+
+        <div class="hist-trophy-card reveal">
+          <div class="hist-trophy-img">
+            <img src="images/pl-trophy.jpg" alt="Premier League Trophy" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="hist-trophy-fallback" style="background:linear-gradient(135deg,#1a0000,#3a0000)">🏆</div>
+          </div>
+          <div class="hist-trophy-body">
+            <span class="hist-trophy-num">20</span>
+            <span class="hist-trophy-name">League Titles</span>
+            <span class="hist-trophy-sub">Most in Premier League era</span>
+          </div>
+        </div>
+
+        <div class="hist-trophy-card reveal">
+          <div class="hist-trophy-img">
+            <img src="images/ucl-trophy.jpg" alt="Champions League Trophy" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="hist-trophy-fallback" style="background:linear-gradient(135deg,#001020,#002040)">⭐</div>
+          </div>
+          <div class="hist-trophy-body">
+            <span class="hist-trophy-num">3</span>
+            <span class="hist-trophy-name">Champions League</span>
+            <span class="hist-trophy-sub">1968 · 1999 · 2008</span>
+          </div>
+        </div>
+
+        <div class="hist-trophy-card reveal">
+          <div class="hist-trophy-img">
+            <img src="images/fa-cup-trophy.jpg" alt="FA Cup Trophy" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="hist-trophy-fallback" style="background:linear-gradient(135deg,#001800,#003000)">🥇</div>
+          </div>
+          <div class="hist-trophy-body">
+            <span class="hist-trophy-num">12</span>
+            <span class="hist-trophy-name">FA Cup</span>
+            <span class="hist-trophy-sub">Record joint winners</span>
+          </div>
+        </div>
+
+        <div class="hist-trophy-card reveal">
+          <div class="hist-trophy-img">
+            <img src="images/league-cup.jpg" alt="League Cup" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="hist-trophy-fallback" style="background:linear-gradient(135deg,#0a0014,#200030)">🏅</div>
+          </div>
+          <div class="hist-trophy-body">
+            <span class="hist-trophy-num">6</span>
+            <span class="hist-trophy-name">League Cup</span>
+            <span class="hist-trophy-sub">Domestic cup glory</span>
+          </div>
+        </div>
+
+        <div class="hist-trophy-card reveal">
+          <div class="hist-trophy-img">
+            <img src="images/club-world-cup.jpg" alt="Club World Cup" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="hist-trophy-fallback" style="background:linear-gradient(135deg,#001820,#003040)">🌍</div>
+          </div>
+          <div class="hist-trophy-body">
+            <span class="hist-trophy-num">1</span>
+            <span class="hist-trophy-name">Club World Cup</span>
+            <span class="hist-trophy-sub">Champions of the world</span>
+          </div>
+        </div>
+
+        <div class="hist-trophy-card reveal">
+          <div class="hist-trophy-img">
+            <img src="images/community-shield.jpg" alt="Community Shield" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="hist-trophy-fallback" style="background:linear-gradient(135deg,#1a1400,#3a2c00)">🌟</div>
+          </div>
+          <div class="hist-trophy-body">
+            <span class="hist-trophy-num">21</span>
+            <span class="hist-trophy-name">Community Shield</span>
+            <span class="hist-trophy-sub">Record holders</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PAGES NAV STRIP -->
+  <div class="related-strip">
+    <a href="index.html" class="related-cell">
+      <img src="images/old-trafford-exterior.jpg" alt="Home" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay">
+        <span class="related-label">Home</span>
+        <span class="related-arrow">→</span>
+      </div>
+    </a>
+    <a href="ronaldo.html" class="related-cell">
+      <img src="images/ronaldo.jpg" alt="Ronaldo" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay">
+        <span class="related-label">Ronaldo</span>
+        <span class="related-arrow">→</span>
+      </div>
+    </a>
+    <a href="history.html" class="related-cell">
+      <img src="images/old-trafford-inside.jpg" alt="History" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay">
+        <span class="related-label">History</span>
+        <span class="related-arrow">→</span>
+      </div>
+    </a>
+    <a href="stats.html" class="related-cell">
+      <img src="images/ferguson.jpg" alt="Stats" loading="lazy" onerror="this.style.display='none'" />
+      <div class="related-overlay">
+        <span class="related-label">Stats</span>
+        <span class="related-arrow">→</span>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Red<span>Devils</span></div>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ronaldo.html">Ronaldo</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="stats.html">Stats</a></li>
+    </ul>
+    <p class="footer-copy">© 2024 RedDevils United Fan Site &nbsp;·&nbsp; <span>Manchester United</span> &nbsp;·&nbsp; For fans, by fans</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
